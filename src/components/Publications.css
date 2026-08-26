@@ -1,0 +1,122 @@
+.publications-section {
+  padding: 6rem 2rem;
+  background-color: var(--bg-primary, #0a0a0a);
+  color: var(--text-primary, #f5f5f5);
+  font-family: var(--font-primary, 'Inter', sans-serif);
+}
+
+.publications-container {
+  max-width: 900px;
+  margin: 0 auto;
+}
+
+.publications-section .section-header {
+  margin-bottom: 4rem;
+  text-align: center;
+}
+
+.publications-section .subtitle {
+  color: var(--purple, #7c3aed);
+  font-family: var(--font-display, 'Space Grotesk', sans-serif);
+  font-size: 1rem;
+  margin-bottom: 0.5rem;
+  text-transform: uppercase;
+  letter-spacing: 2px;
+}
+
+.publications-section .title {
+  font-size: 3rem;
+  font-family: var(--font-display, 'Space Grotesk', sans-serif);
+  background: var(--gradient-pink-purple, linear-gradient(to right, var(--pink, #f472b6), var(--purple, #7c3aed)));
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  margin: 0;
+}
+
+.publications-list {
+  display: flex;
+  flex-direction: column;
+  gap: 1.5rem;
+}
+
+.pub-card {
+  background-color: var(--bg-card, #1a1a2e);
+  border-radius: 8px;
+  padding: 2rem;
+  border-left: 4px solid transparent;
+  transition: transform 0.3s ease, background-color 0.3s ease;
+}
+
+.pub-card:hover {
+  transform: translateX(10px);
+  background-color: var(--bg-card-hover, #16213e);
+}
+
+.border-left-purple {
+  border-left-color: var(--purple, #7c3aed);
+}
+
+.border-left-cyan {
+  border-left-color: var(--cyan, #06b6d4);
+}
+
+.border-left-pink {
+  border-left-color: var(--pink, #f472b6);
+}
+
+.pub-title {
+  font-size: 1.25rem;
+  font-weight: 700;
+  margin: 0 0 1rem 0;
+  color: var(--text-primary, #f5f5f5);
+  line-height: 1.4;
+  font-family: var(--font-display, 'Space Grotesk', sans-serif);
+}
+
+.pub-authors {
+  color: var(--text-secondary, #a1a1aa);
+  margin: 0 0 1rem 0;
+  font-size: 0.95rem;
+}
+
+.pub-meta {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex-wrap: wrap;
+  gap: 1rem;
+}
+
+.pub-venue {
+  color: var(--text-muted, #71717a);
+  font-style: italic;
+  font-size: 0.9rem;
+}
+
+.pub-status {
+  padding: 0.25rem 0.75rem;
+  border-radius: 50px;
+  font-size: 0.75rem;
+  font-weight: 600;
+  text-transform: uppercase;
+  letter-spacing: 0.5px;
+}
+
+.status-accepted {
+  background-color: rgba(52, 211, 153, 0.15);
+  color: var(--emerald, #34d399);
+  border: 1px solid rgba(52, 211, 153, 0.3);
+}
+
+.status-under-revision {
+  background-color: rgba(251, 191, 36, 0.15);
+  color: var(--amber, #fbbf24);
+  border: 1px solid rgba(251, 191, 36, 0.3);
+}
+
+@media (max-width: 600px) {
+  .pub-meta {
+    flex-direction: column;
+    align-items: flex-start;
+  }
+}

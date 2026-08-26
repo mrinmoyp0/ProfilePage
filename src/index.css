@@ -1,0 +1,144 @@
+/* ============================================
+   GLOBAL STYLES - Mrinmoy Pathak Portfolio
+   ============================================ */
+
+:root {
+  /* Background */
+  --bg-primary: #0a0a0a;
+  --bg-surface: #111111;
+  --bg-card: #1a1a2e;
+  --bg-card-hover: #16213e;
+
+  /* Gradients */
+  --gradient-purple-cyan: linear-gradient(135deg, #7c3aed, #06b6d4);
+  --gradient-pink-purple: linear-gradient(135deg, #f472b6, #7c3aed);
+  --gradient-cyan-emerald: linear-gradient(135deg, #06b6d4, #34d399);
+  --gradient-full: linear-gradient(135deg, #7c3aed, #06b6d4, #34d399, #f472b6);
+
+  /* Colors */
+  --purple: #7c3aed;
+  --cyan: #06b6d4;
+  --pink: #f472b6;
+  --emerald: #34d399;
+  --amber: #fbbf24;
+
+  /* Text */
+  --text-primary: #f5f5f5;
+  --text-secondary: #a1a1aa;
+  --text-muted: #71717a;
+
+  /* Spacing */
+  --section-padding: 100px 0;
+  --container-width: 1200px;
+
+  /* Font */
+  --font-primary: 'Inter', sans-serif;
+  --font-display: 'Space Grotesk', sans-serif;
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  scroll-behavior: smooth;
+  scrollbar-width: thin;
+  scrollbar-color: var(--purple) var(--bg-primary);
+}
+
+body {
+  font-family: var(--font-primary);
+  background-color: var(--bg-primary);
+  color: var(--text-primary);
+  overflow-x: hidden;
+  line-height: 1.6;
+}
+
+::-webkit-scrollbar {
+  width: 8px;
+}
+
+::-webkit-scrollbar-track {
+  background: var(--bg-primary);
+}
+
+::-webkit-scrollbar-thumb {
+  background: var(--purple);
+  border-radius: 4px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+  background: var(--cyan);
+}
+
+.container {
+  max-width: var(--container-width);
+  margin: 0 auto;
+  padding: 0 24px;
+}
+
+.section {
+  padding: var(--section-padding);
+  position: relative;
+}
+
+.section-title {
+  font-family: var(--font-display);
+  font-size: clamp(2rem, 5vw, 3rem);
+  font-weight: 700;
+  margin-bottom: 16px;
+  background: var(--gradient-purple-cyan);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.section-subtitle {
+  font-size: 1.1rem;
+  color: var(--text-secondary);
+  margin-bottom: 60px;
+  max-width: 600px;
+}
+
+.gradient-text {
+  background: var(--gradient-purple-cyan);
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: transparent;
+  background-clip: text;
+}
+
+.gradient-border {
+  position: relative;
+  border-radius: 16px;
+  padding: 1px;
+  background: var(--gradient-purple-cyan);
+}
+
+.gradient-border-inner {
+  background: var(--bg-card);
+  border-radius: 15px;
+  padding: 32px;
+}
+
+/* Glow effect */
+.glow {
+  filter: drop-shadow(0 0 20px rgba(124, 58, 237, 0.3));
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+  .section {
+    padding: 60px 0;
+  }
+  .section-subtitle {
+    margin-bottom: 40px;
+  }
+}
+
+@media (max-width: 480px) {
+  .container {
+    padding: 0 16px;
+  }
+}
