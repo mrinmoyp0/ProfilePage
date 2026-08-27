@@ -2,6 +2,7 @@ import React from 'react';
 import gsap from 'gsap';
 import { ScrollTrigger } from 'gsap/ScrollTrigger';
 
+import GlassCursor from './components/GlassCursor';
 import Navbar from './components/Navbar';
 import Hero from './components/Hero';
 import About from './components/About';
@@ -19,6 +20,7 @@ gsap.registerPlugin(ScrollTrigger);
 function App() {
   return (
     <div className="app">
+      <GlassCursor />
       <Navbar />
       <Hero />
       <About />
